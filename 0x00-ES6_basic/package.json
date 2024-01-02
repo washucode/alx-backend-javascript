@@ -8,6 +8,8 @@
     "eslint-plugin-import": "^2.29.1",
     "jest": "^27.0.0"
   },
+
+  "type": "module",
   "name": "0x00-es6_basic",
   "description": "0x00. ES6 Basics ================",
   "version": "1.0.0",
