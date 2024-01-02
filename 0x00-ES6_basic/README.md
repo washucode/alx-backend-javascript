@@ -3,11 +3,6 @@
 
 JavaScriptES6
 
--   By: Johann Kerbrat, Engineering Manager at Uber Works
--   Weight: 1
--   Project will start Jan 2, 2024 6:00 AM, must end by Jan 4, 2024 6:00 AM
--   Checker was released at Jan 2, 2024 6:00 PM
--   An auto review will be launched at the deadline
 
 ### Concepts
 
@@ -16,24 +11,11 @@ JavaScriptES6
 -   [Modern Javascript](https://intranet.alxswe.com/concepts/541)
 -   [Software Linter](https://intranet.alxswe.com/concepts/542)
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/08806026ef621f900121.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240102T203428Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=47873755b2b3dfb6702841c4f46435ffc7451b4d80d1849568f24d70d71eacd9)
 
-Resources
----------
-
-**Read or watch**:
-
--   [ECMAScript 6 - ECMAScript 2015](https://intranet.alxswe.com/rltoken/NW1dFLFExQ12_hD8yvkV3A "ECMAScript 6 - ECMAScript 2015")
--   [Statements and declarations](https://intranet.alxswe.com/rltoken/sroRUsUvOZV28V99MHDenw "Statements and declarations")
--   [Arrow functions](https://intranet.alxswe.com/rltoken/N2WLylppCtkkX3YFFtyUHw "Arrow functions")
--   [Default parameters](https://intranet.alxswe.com/rltoken/kbw9gMO6sdeOKAY23SYVgA "Default parameters")
--   [Rest parameter](https://intranet.alxswe.com/rltoken/erZfCvacuGVk9z1CQlJvYQ "Rest parameter")
--   [Javascript ES6 --- Iterables and Iterators](https://intranet.alxswe.com/rltoken/JAB5Y0TOU8d9JvmJEi9tiQ "Javascript ES6 --- Iterables and Iterators")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/KDGvEqVWIsvOQfCcwDNHNg "explain to anyone"), **without the help of Google**:
 
 -   What ES6 is
 -   New features introduced in ES6
@@ -62,46 +44,46 @@ Requirements
 Setup
 -----
 
-### Install NodeJS 12.11.x
+# Create a new node project
+npm init -y
 
-(in your home directory):
+# Install babel core for project
+npm install --save-dev @babel/core
 
-```
-curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
+# Add babel presets (babel plugins and config options)
+npm install --save-dev @babel/preset-env
 
-```
+# Create babel config file
+touch babel.config.js
 
-```
-$ nodejs -v
-v12.11.1
-$ npm -v
-6.11.3
+# Install babel-node for project
+npm install --save-dev @babel/node
 
-```
+# Run js file using babel node
+npx babel-node <js filename>
 
-### Install Jest, Babel, and ESLint
+# Run js file using package.json script
+npm run dev <filename>
 
-in your project directory, install Jest, Babel and ESList by using the supplied `package.json` and run `npm install`.
+# Install eslint for liniting js file
+npm install --save-dev eslint
 
-Configuration files
--------------------
+# Setup eslint configuration
+npx eslint --init # or
+npm init @eslint/config
 
-Add the files below to your project directory
+# Lint a folder with js file or lint a js file.
+npx eslint <folder | filename>
 
-### `package.json`
+# Fix a js file lint issue
+npx eslint <folder | filename> --fix
 
-Click here to show/hide file contents
+# Install Jest as development dependecy.
+npm install --save-dev jest
+# or
 
-### `babel.config.js`
+npm install --save-dev jest@27.0.0
 
-Click here to show/hide file contents
+# Run jet test
+npm run test
 
-### `.eslintrc.js`
-
-Click here to show/hide file contents
-
-### Finally...
-
-Don't forget to run `npm install` from the terminal of your project folder to install all necessary project dependencies.
