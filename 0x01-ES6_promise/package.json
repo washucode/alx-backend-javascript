@@ -9,7 +9,7 @@
     "jest": "^27.0.0"
   },
   "type": "module",
-  "name": "0x01. ES6 Promises",
+  "name": "0x01.-ES6-Promises",
   "description": "0x01. ES6 Promises ================",
   "version": "1.0.0",
   "main": "index.js",
