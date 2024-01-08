@@ -3,10 +3,10 @@
  */
 
 export default class Airport {
-    /**
-     * @param {string} name
-     * @param {string} code
-     */
+  /**
+  * @param {string} name
+  * @param {string} code
+  */
 
   constructor(name, code) {
     this.name = name;
