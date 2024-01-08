@@ -2,7 +2,7 @@
  * Currency Class Implementation
  */
 
-class Currency {
+export default class Currency {
   /**
    *
    * @param {string} code
@@ -39,5 +39,3 @@ class Currency {
     return `${this.name} (${this.code})`;
   }
 }
-
-export default Currency;
